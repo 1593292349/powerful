@@ -1,0 +1,23 @@
+{
+	"compilerOptions":{
+		"strict":true,
+		"module":"esnext",
+		"target":"esnext",
+		"moduleResolution":"bundler",
+		"allowJs":true,
+		"useDefineForClassFields":true,
+		"importHelpers":true,
+		"resolveJsonModule":true,
+		"esModuleInterop":true,
+		"baseUrl":".",
+		"paths":{
+		},
+		"declaration":false
+	},
+	"include":[
+		"**/*"
+	],
+	"exclude":[
+		"node_modules"
+	]
+}

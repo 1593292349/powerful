@@ -1,0 +1,52 @@
+{
+	"type":"module",
+	"name":"@powerful/utils",
+	"version":"1.0.0-beta.0",
+	"description":"JavaScript工具",
+	"main":"lib/vue3.js",
+	"module":"./lib/esm/browser/index.js",
+	"unpkg":"lib/vue3.js",
+	"jsdelivr":"lib/vue3.js",
+	"types":"./lib/types/browser/index.d.ts",
+	"sideEffects":[],
+	"scripts":{
+		"test":"jest",
+		"build":"npm run build:esm",
+		"build:esm":"tsx scripts/build-esm.ts"
+	},
+	"files":[
+		"lib"
+	],
+	"exports":{
+		"./esm/node":{
+			"types":"./lib/types/node/index.d.ts",
+			"default":"./lib/esm/node/index.js"
+		},
+		"./esm/browser":{
+			"types":"./lib/types/browser/index.d.ts",
+			"default":"./lib/esm/browser/index.js"
+		},
+		"./umd/node":{
+			"types":"./lib/types/node/index.d.ts",
+			"default":"./lib/vue3.js"
+		},
+		"./umd/browser":{
+			"types":"./lib/types/browser/index.d.ts",
+			"default":"./lib/vue3.js"
+		}
+	},
+	"repository":{
+		"type":"git",
+		"url":"https://github.com/1593292349/powerful.git"
+	},
+	"keywords":[
+		"util"
+	],
+	"author":"唐国雄",
+	"license":"MIT",
+	"publishConfig":{
+		"registry":"https://registry.npmjs.org"
+	},
+	"dependencies":{
+	}
+}

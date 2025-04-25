@@ -1,0 +1,8 @@
+packages:
+  - 'packages/*'
+  - 'packages-private/*'
+
+nodeLinker: hoisted
+
+catalog:
+  '@inquirer/prompts': ~7.4.1
