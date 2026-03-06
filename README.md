@@ -1,3 +1,16 @@
+## 锁定包管理器版本
+
+```shell
+corepack use pnpm@10
+```
+
+或者
+
+
+```shell
+corepack use pnpm@latest
+```
+
 ## 依赖列表
 
 * chalk: 改变控制台打印的颜色
