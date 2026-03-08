@@ -51,10 +51,11 @@ corepack use pnpm@latest
 * 考虑数据的异步获取。
 * 组件通过暴露 classes, styles 实现基础的自定义。
 * 既接收简单类型, 又支持高级扩展性(例如: string | object 和 boolean | object)。
+* 支持 'auto', 自动根据其他属性的值决定行为(具体值)。
 * 数组类数据, 通过 PropOrGetter 定义每项具有的属性。
     * 注意: 当数据是树形结构时, 请将 PropOrGetter 属性分为两类
         1. 基于原生数据, 来构建标准数据, 例如: childrenKey, lazyKey, uniqueKey
-        2. 基于标准数据, 来个性化定制外观, 例如: labelKey, slotKey
+        2. 基于标准数据, 来个性化定制外观、样式, 例如: labelKey, slotKey
     * 渲染 `选中数据` 时, 始终和标准数据的 `unique` 比较
         1. `选中数据` 如果是对象类型, 则需要先转换得到unique值, 再比较
         2. 多选时, 不要包含未匹配上的 `选中数据`
